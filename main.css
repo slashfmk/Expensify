@@ -1,0 +1,257 @@
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "helvetica";
+    font-weight: 200;
+    color: #555;
+}
+
+main{
+    padding: 5px;
+    display: grid;
+    align-content: space-between;
+    justify-content: center;;
+}
+
+.icon{
+    width: 30px;
+    fill: #bbbbbb;
+    height: auto;
+}
+
+.actions{
+    height: 50px;
+    display: grid;
+}
+
+.header{
+
+    background-color: #273238;
+    padding: 3rem;
+    text-align: center;
+    font-weight: 200;
+
+    color: #fff;
+    margin-bottom: 10px;
+
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, minmax(min-content, 350px));
+}
+
+.heading__app{
+    font-weight: 100;
+    font-size: 15px;
+    margin: 8px 0;
+}
+
+
+.header__available{
+    font-weight: 100;
+    font-size: 40px;
+    margin: 8px 0;
+}
+
+.title__cat{
+    font-size: 16px;
+}
+
+label{
+    font-size: 12px;
+}
+
+button{
+    padding: 1rem 1.2rem;
+    background-color: #00bcd5;
+    border: none;
+    color: #fff;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input, textarea{
+
+    /*border: solid .5px #888888;*/
+    border: solid 1px #888888;
+    padding: 10px;
+    color: #777;
+    border-radius: 4px;
+}
+
+select{
+    max-width: 70px;
+    border: solid 1px #8f9095;
+    padding: 0 18px;
+    border-radius: 4px;
+
+    color: #ccc;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+*::placeholder, input::placeholder{
+    color: #bbb;
+}
+
+.form-box{
+    max-width: 800px;
+    display: grid;
+    grid-gap:0;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 50px);
+    align-content: space-between;
+
+}
+
+.list-container{
+    max-width: 800px;
+    display: grid;
+    align-content: space-between;
+    grid-gap: 20px;
+
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+
+.inline{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.amount-item-income{
+     text-align: right;
+     color: #00bcd5;
+ }
+
+.amount-item-expense{
+    text-align: right;
+    color: #de2424;
+}
+
+.income-item{
+    /*color: #2f9a48;*/
+}
+
+.income-item:last-child{
+    background-color: #def0e2;
+}
+
+
+.expense-item{
+    /*color: #de2424;*/
+}
+
+.expense-item:last-child{
+    background-color: #fcdfda;
+}
+
+
+
+
+.expenses-heading{
+    font-weight: 300;
+    margin-bottom: 8px;
+    border-bottom: solid .6px #bbb;
+    padding: 0 0 5px 0;
+    color: #de2424;
+
+}
+
+.incomes-heading{
+    font-weight: 300;
+    margin-bottom: 8px;
+    border-bottom: solid .6px #bbb;
+    padding: 0 0 5px 0;
+    color: #00bcd5;
+}
+
+
+.list:not(last-child){
+    margin-right: 2px;
+}
+
+ul.expenses-list{
+    list-style: none;
+}
+
+li.list__item{
+    padding: 7px 9px;
+    border-bottom: solid .5px #eeeceb;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.list__item{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 15px;
+
+}
+
+.box{
+    padding: 20px;
+    max-width: 100%;
+    width: auto;
+    margin: 5px 0;
+    border: solid .3px #ccc;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+}
+
+.lf{
+    justify-self: start;
+}
+
+.rt{
+    justify-self: end;
+}
+
+.income-show{
+    color: #00bcd5;
+}
+
+.expense-show{
+    color: #de2424;
+}
+
+.amount-list{
+    justify-self: end;
+}
+
+.form__field{
+    margin: 0 5px;
+}
+
+.amount-field{
+
+    grid-column: 7 / 8;
+    grid-row: 1 / 2;
+}
+
+.description-field{
+
+    grid-column: 2 / 7;
+    grid-row: 1 / 2;
+}
+
+.btn--add{
+    grid-column: 8 / 9;
+    grid-row: 1 / 2;
+}
+

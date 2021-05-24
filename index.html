@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Expense Tracker | Home</title>
+</head>
+<body>
+
+<header class="header">
+    <h1 class="heading__app">Available Budget in <span class="date"></span> </h1>
+
+    <h2 class="header__available">0</h2>
+    <div class="box income-show"><span class="lf">Incomes</span> <span class="rt"> + <h3 id="income_total" class="inline">0</h3> </span> </div>
+    <div class="box expense-show"><span class="lf">Expenses</span> <span class="rt"> - <h3 id="expense_total" class="inline">0</h3></span></div>
+
+    <div class="actions">
+
+
+<!--        <svg class="icon">-->
+<!--            <use xlink:href="assets/sprites/solid.svg#check-square"></use>-->
+<!--        </svg>-->
+
+<!--        <svg class="icon">-->
+<!--            <use xlink:href="assets/sprites/solid.svg#home"></use>-->
+<!--        </svg>-->
+
+<!--        <svg class="icon">-->
+<!--            <use xlink:href="assets/sprites/solid.svg#home"></use>-->
+<!--        </svg>-->
+
+
+    </div>
+</header>
+
+<main>
+
+    <form action="" class="form-1 form-box" method="POST">
+        <input type="text" placeholder="Description" value="" name="description" id ="description" class="description-field form__field"/>
+        <input type="text" placeholder="Amount Please" value="" name="amount" id ="amount" class="amount-field form__field"/>
+
+        <select name="type" class="type form__field" id="action-type">
+            <option selected value="add">+</option>
+            <option value="substract">-</option>
+        </select>
+
+        <button class="btn ok-btn" id="ok-btn" type="submit">+</button>
+    </form>
+
+
+        <div class="list-container">
+
+            <div class="list list--incomes">
+
+            <h3 class="incomes-heading">INCOME</h3>
+            <ul class="incomes-list">
+                <!--<li class="income-item list__item"><span class="descript-list">Market</span> <span class="amount-list">$6000</span></li>-->
+
+            </ul>
+        </div>
+
+
+            <div class="list list--expenses">
+
+                <h3 class="expenses-heading">EXPENSES</h3>
+                <ul class="expenses-list">
+                    <!--<li class="expense-item list__item"><span class="descript-list">Market</span> <span class="amount-list">$6000</span></li>-->
+                </ul>
+            </div>
+
+    </div>
+
+        </div>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
